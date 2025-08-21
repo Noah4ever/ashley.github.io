@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+}
+
+.main {
+  margin: 0.5rem;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.name-header {
+  font-family: "Bagel Fat One";
+  font-size: xx-large;
+  color: rgb(69, 62, 29);
+  text-decoration: none;
+}
+
+.material-symbols-outlined {
+  width: 2rem;
+  height: 1rem;
+  border: none;
+  box-shadow: none;
+  cursor: pointer;
+  background-color: transparent;
+}
