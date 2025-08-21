@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  background-color: antiquewhite;
 }
 
 .main {
@@ -26,4 +27,25 @@ header {
   box-shadow: none;
   cursor: pointer;
   background-color: transparent;
+}
+
+.ash-pic{
+  display: block;
+  margin-right:2000cm;
+  width: 50;
+}
+
+.start-text-box1{
+  font-family: "Bagel Fat One";
+  font-size: 15 px;
+  color: #76c77d;
+  
+  
+}
+
+.start-text-box2{
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  border: #000000;
+  border-style: inset;
 }
