@@ -30,22 +30,35 @@ header {
 }
 
 .ash-pic{
-  display: block;
-  margin-right:2000cm;
-  width: 50;
+  display: flex;
+  left: 400px;
+  position: absolute;
+  width: 18%;
+  height: auto;
+
+
 }
 
 .start-text-box1{
   font-family: "Bagel Fat One";
-  font-size: 15 px;
+  font-size: 65px;
   color: #76c77d;
-  
+  text-align:center;
+  top: 100px;
+  position:absolute;
+  right: 500px;
   
 }
 
 .start-text-box2{
   font-family: Arial, Helvetica, sans-serif;
-  color: black;
-  border: #000000;
-  border-style: inset;
+  font-size: large;
+  border: 1px, inset, black;
+  border-radius: 5px;
+  text-align: left;
+  top: 200px;
+  box-sizing: border-box;
+  width: 200px;
+  position:relative;
+  
 }
