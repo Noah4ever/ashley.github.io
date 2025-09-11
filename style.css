@@ -7,10 +7,25 @@ body {
   margin: 0.5rem;
 }
 
+body.light {
+  background-color: #fff;
+  color: #000;
+}
+
+body.dark {
+  background-color: #121212;
+  color: #fff;}
+
 header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  position: fixed;
+   top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
 }
 
 .name-header {
@@ -18,30 +33,52 @@ header {
   font-size: xx-large;
   color: rgb(69, 62, 29);
   text-decoration: none;
+  
 }
 
 .material-symbols-outlined {
-  width: 2rem;
-  height: 1rem;
   border: none;
   box-shadow: none;
   cursor: pointer;
   background-color: transparent;
 }
 
+body.light #toggleMode::before {
+  content: "rainy"; /* zeigt Mond-Symbol im Light Mode */
+}
+
+body.dark #toggleMode::before {
+  content: "sunny"; /* zeigt Sonne-Symbol im Dark Mode */
+}
+
+#toggleMode {
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: inherit;
+}
+
+body.light #toggleMode::before {
+  content: "rainy"; /* zeigt Mond-Symbol im Light Mode */
+}
+
+body.dark #toggleMode::before {
+  content: "sunny"; /* zeigt Sonne-Symbol im Dark Mode */
+}
+
 .ash-pic{
   display: flex;
   left: 400px;
   position: absolute;
-  width: 18%;
+  max-width: 600px;
+  min-height: 200px;
   height: auto;
-
-
 }
 
 .start-text-box1{
   font-family: "Bagel Fat One";
-  font-size: 65px;
+  font-size: clamp(4rem, 2,5vw, 3rem);
   color: #76c77d;
   text-align:center;
   top: 100px;
