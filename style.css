@@ -116,7 +116,51 @@ header {
   justify-content: center;
   height: 100vh;
   gap: 1rem;
-  padding-top: 6rem;
+  padding-top: 1rem;
+}
+
+
+
+h1{
+  text-align: center;
+  font-family: "Bagel Fat One";
+  font-size: clamp(4rem, 2, 5vw, 3rem);
+
+}
+
+.timeline{
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+  padding-left: 40px;
+  border-left: 4px solid black;
+}
+
+.school::before{
+  content: '';
+  position: absolute;
+  left: -9px;
+  background-color: black;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  top: 0;
+}
+
+.school{
+  position: relative;
+  margin: 30px 0;
+}
+
+.school h3{
+  margin: 0;
+  font-size: 1.2rem;
+  color: #76c77d;
+}
+
+.school p{
+  margin: 5px 0 0 0;
+  color: #333;
 }
 
 @media (width >= 700px) {
