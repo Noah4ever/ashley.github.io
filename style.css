@@ -119,16 +119,13 @@ header {
   padding-top: 1rem;
 }
 
-
-
-h1{
+h1 {
   text-align: center;
   font-family: "Bagel Fat One";
   font-size: clamp(4rem, 2, 5vw, 3rem);
-
 }
 
-.timeline{
+.timeline {
   position: relative;
   max-width: 600px;
   margin: 0 auto;
@@ -136,8 +133,8 @@ h1{
   border-left: 4px solid black;
 }
 
-.school::before{
-  content: '';
+.school::before {
+  content: "";
   position: absolute;
   left: -9px;
   background-color: black;
@@ -147,20 +144,30 @@ h1{
   top: 0;
 }
 
-.school{
+.school {
   position: relative;
   margin: 30px 0;
+  margin: 30px 0;
+  padding-left: 25px;
+  opacity: 0; /* Start unsichtbar */
+  transform: translateY(40px);
+  transition: all 0.6s ease-out;
 }
 
-.school h3{
+.school h3 {
   margin: 0;
   font-size: 1.2rem;
   color: #76c77d;
 }
 
-.school p{
+.school p {
   margin: 5px 0 0 0;
   color: #333;
+}
+
+.school.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 @media (width >= 700px) {
