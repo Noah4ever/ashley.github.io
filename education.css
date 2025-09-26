@@ -1,0 +1,61 @@
+h1 {
+  text-align: center;
+  font-family: "Bagel Fat One";
+  font-size: clamp(4rem, 2, 5vw, 3rem);
+}
+
+.timeline {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+  padding-left: 40px;
+  border-left: 4px solid rgb(0, 0, 0);
+}
+
+.school::before {
+  content: "";
+  position: absolute;
+  left: -9px;
+  background-color: black;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  top: 0;
+}
+
+.school {
+  position: relative;
+  margin: 30px 0;
+  margin: 30px 0;
+  padding-left: 25px;
+  opacity: 0; 
+  transform: translateY(40px);
+  transition: all 0.6s ease-out;
+}
+
+.school h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.school p {
+  margin: 5px 0 0 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #5a5858;
+}
+
+.school.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (width >= 700px) {
+  .school h3{
+    font-size: 30px;
+  }
+  .school p{
+    font-size: 25px;
+  }
+}

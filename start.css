@@ -1,0 +1,151 @@
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+  z-index: 1000;
+    transition: top 0.15s ease-in-out;
+    backdrop-filter: blur(5px);
+}
+
+.name-header {
+  font-family: "Bagel Fat One";
+  font-size: xx-large;
+  color: rgb(69, 62, 29);
+  text-decoration: none;
+}
+
+.material-symbols-outlined {
+  border: none;
+  box-shadow: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.ash-pic {
+  height: 100%;
+  position: relative;
+  z-index: 10;
+}
+
+.image-container {
+  position: relative;
+  height: 60%;
+}
+
+.image-border {
+  position: absolute;
+  top: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 100%;
+  border: 3px solid black;
+  border-radius: 10px;
+  z-index: 9;
+  padding: 0 20px;
+}
+
+.image-box {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -28px;
+  width: 100%;
+  height: 20%;
+  z-index: 11;
+  padding: 0 20px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 0 0 5px 9px;
+}
+
+.paragraph{
+    font-family: "Bagel Fat One";
+    font-size: 25px;
+    left: 50%;
+    text-align: center;
+    margin-top: 5px;
+    color: rgb(223, 135, 196);
+}
+
+.icon-list{
+list-style: none;  
+flex-direction: row;
+display: flex;
+justify-content: space-between;
+position: absolute;
+left: 0;
+right: 0;
+top:40px;
+padding: 0 20px;
+}
+
+.icon{
+  color: rgb(223, 135, 196);
+  font-size: 45px ;
+}
+
+.start-text-box1 {
+  font-family: "Bagel Fat One";
+  font-size: clamp(4rem, 2, 5vw, 3rem);
+  color: #000000;
+}
+
+.start-text-box2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+.start-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  padding-inline: 2rem;
+}
+
+.start-page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  gap: 1rem;
+  padding-top: 1rem;
+}
+
+@media (width >= 700px) {
+  .start-page-container {
+    flex-direction: row-reverse;
+    width: 70%;
+    padding-top: 0rem;
+    margin: auto;
+  }
+  .start-text-box1 {
+    font-size: 3rem;
+  }
+  .start-text-box2{
+    font-size: 30px;
+  }
+  .image-container{
+    height: 70%;
+  }
+  .name-header{
+    font-size: 40px;
+  }
+  #toggleMode{
+    font-size: 40px;
+  }
+  .icon{
+    font-size: 70px;
+  }
+}

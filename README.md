@@ -34,3 +34,6 @@ Got a question or just want to say hi? I'd love to hear from you! You can find m
 
 Thanks for stopping by! Hope you enjoy your visit!
 XOXO 💋
+
+to do
+958 x 936 textbox verutschst nach unten neben biold
