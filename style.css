@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding-top: 80px;
+  transition: background 0.6s ease, color 0.6s ease;
 }
 
 body.light {
@@ -20,6 +21,5 @@ background: linear-gradient(128deg,rgba(0, 0, 0, 1) 39%, rgba(120, 171, 120, 1) 
   cursor: pointer;
   color: inherit;
 }
-
 
 

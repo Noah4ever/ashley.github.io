@@ -1,0 +1,21 @@
+.skill-list{
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.icon-skill{
+    list-style: none;  
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    font-size: 80px;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+}

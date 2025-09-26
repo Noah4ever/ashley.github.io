@@ -37,3 +37,6 @@ XOXO 💋
 
 to do
 958 x 936 textbox verutschst nach unten neben biold
+transition der colors
+was mit dark und light mode mit den farben fuer alles eine klasse?
+skills richtig anpassen
