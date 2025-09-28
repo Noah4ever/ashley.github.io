@@ -1,4 +1,3 @@
-
 header {
   display: flex;
   flex-direction: row;
@@ -10,8 +9,8 @@ header {
   padding: 1rem;
   box-sizing: border-box;
   z-index: 1000;
-    transition: top 0.15s ease-in-out;
-    backdrop-filter: blur(5px);
+  transition: top 0.15s ease-in-out;
+  backdrop-filter: blur(5px);
 }
 
 .name-header {
@@ -62,33 +61,33 @@ header {
   z-index: 11;
   padding: 0 20px;
   background-color: rgb(0, 0, 0);
-  border-radius: 0 0 5px 9px;
+  border-radius: 0 0 5px 5px;
 }
 
-.paragraph{
-    font-family: "Bagel Fat One";
-    font-size: 25px;
-    left: 50%;
-    text-align: center;
-    margin-top: 5px;
-    color: rgb(223, 135, 196);
-}
-
-.icon-list{
-list-style: none;  
-flex-direction: row;
-display: flex;
-justify-content: space-between;
-position: absolute;
-left: 0;
-right: 0;
-top:40px;
-padding: 0 20px;
-}
-
-.icon{
+.paragraph {
+  font-family: "Bagel Fat One";
+  font-size: 25px;
+  left: 50%;
+  text-align: center;
+  margin-top: 5px;
   color: rgb(223, 135, 196);
-  font-size: 45px ;
+}
+
+.icon-list {
+  list-style: none;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 40px;
+  padding: 0 20px;
+}
+
+.icon {
+  color: rgb(223, 135, 196);
+  font-size: 45px;
 }
 
 .start-text-box1 {
@@ -133,19 +132,19 @@ padding: 0 20px;
   .start-text-box1 {
     font-size: 3rem;
   }
-  .start-text-box2{
+  .start-text-box2 {
     font-size: 30px;
   }
-  .image-container{
+  .image-container {
     height: 70%;
   }
-  .name-header{
+  .name-header {
     font-size: 40px;
   }
-  #toggleMode{
+  #toggleMode {
     font-size: 40px;
   }
-  .icon{
+  .icon {
     font-size: 70px;
   }
 }

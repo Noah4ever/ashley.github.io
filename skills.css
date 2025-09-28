@@ -1,21 +1,22 @@
-.skill-list{
-    justify-content: center;
-    flex-direction: column;
-    display: flex;
-    list-style: none;
-    align-items: center;
+.skill-section {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
 }
 
-.icon-skill{
-    list-style: none;  
-    flex-direction: row;
-    display: flex;
-    justify-content: space-between;
-    position: absolute;
-    font-size: 80px;
+.skill-list {
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  list-style: none;
+  align-items: center;
+  padding: 0;
 }
 
-button {
-    background-color: transparent;
-    border: none;
+.icon-skill {
+  list-style: none;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  font-size: 80px;
 }
