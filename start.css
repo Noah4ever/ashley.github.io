@@ -25,6 +25,11 @@ header {
   box-shadow: none;
   cursor: pointer;
   background-color: transparent;
+  transition: transform 0.3s ease;
+}
+
+.material-symbols-outlined:hover {
+  transform: scale(1.2);
 }
 
 .ash-pic {
@@ -88,6 +93,11 @@ header {
 .icon {
   color: rgb(223, 135, 196);
   font-size: 45px;
+  transition: transform 0.3s ease;
+}
+
+.icon:hover {
+  transform: scale(1.2);
 }
 
 .start-text-box1 {
@@ -119,10 +129,10 @@ header {
   justify-content: center;
   height: 100vh;
   gap: 1rem;
-  padding-top: 1rem;
+  padding-top: 3rem;
 }
 
-@media (width >= 700px) {
+@media (width >= 950px) {
   .start-page-container {
     flex-direction: row-reverse;
     width: 70%;

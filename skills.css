@@ -6,7 +6,7 @@
 
 .skill-list {
   justify-content: center;
-  flex-direction: column;
+  flex-direction: row;
   display: flex;
   list-style: none;
   align-items: center;
@@ -19,4 +19,10 @@
   display: flex;
   justify-content: space-between;
   font-size: 80px;
+  color: rgb(186, 41, 183);
+  transition: transform 0.3s ease;
+}
+
+.icon-skill:hover {
+  transform: scale(1.2);
 }

@@ -1,24 +1,23 @@
 body.light {
-  --color-background: #db93bc;
   --color-text: black;
-  /* Zu Radial gradient machen */
-  /* background: linear-gradient(
-    33deg,
-    rgba(219, 147, 188, 1) 19%,
-    #faebd7 61%
-  ); */
+  --color-background: #db93bc;
+  background: radial-gradient(
+    circle,
+    rgba(219, 147, 188, 1) 44%,
+    rgba(250, 235, 215, 1) 87%
+  );
 }
 
 body.dark {
-  --color-background: #000000;
+  --color-background: #93b6db;
   --color-text: white;
-  /* Zu Radial gradient machen */
-  /* background: linear-gradient(
-    128deg,
-    rgba(0, 0, 0, 1) 39%,
-    rgba(120, 171, 120, 1) 92%
-  ); */
+  background: radial-gradient(
+    circle,
+    rgba(147, 182, 219, 1) 0%,
+    rgba(61, 58, 102, 1) 60%
+  );
 }
+/* change animation background */
 
 body {
   margin: 0;
