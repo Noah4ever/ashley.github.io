@@ -6,6 +6,9 @@ button.addEventListener("click", () => {
   button.innerHTML = document.body.classList.contains("dark")
     ? "sunny"
     : "rainy";
+
+  body.classList.add("animate-gradient");
+  setTimeout(() => body.classList.remove("animate-gradient"), 1500);
 });
 
 const schools = document.querySelectorAll(".school");
