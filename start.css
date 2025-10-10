@@ -16,8 +16,9 @@ header {
 .name-header {
   font-family: "Bagel Fat One";
   font-size: xx-large;
-  color: rgb(69, 62, 29);
   text-decoration: none;
+  color: var(--color-text);
+  transition: transform 1s ease;
 }
 
 .material-symbols-outlined {
@@ -75,7 +76,7 @@ header {
   left: 50%;
   text-align: center;
   margin-top: 5px;
-  color: rgb(223, 135, 196);
+  color: var(--primary-color);
 }
 
 .icon-list {
@@ -91,7 +92,7 @@ header {
 }
 
 .icon {
-  color: rgb(223, 135, 196);
+  color: var(--primary-color);
   font-size: 45px;
   transition: transform 0.3s ease;
 }
@@ -102,16 +103,17 @@ header {
 
 .start-text-box1 {
   font-family: "Bagel Fat One";
-  font-size: clamp(4rem, 2, 5vw, 3rem);
-  color: #000000;
+  font-size: 30px;
+  color: var(--color-text);
 }
 
 .start-text-box2 {
   font-family: "Funnel Display", sans-serif;
   font-size: larger;
-  border: 2px solid black;
-  border-radius: 5px;
+  border-radius: 6px;
   padding: 1rem;
+  backdrop-filter: blur(100px);
+  background-color: var(--color-blur);
 }
 
 .start-text-container {
@@ -141,6 +143,7 @@ header {
   }
   .start-text-box1 {
     font-size: 3rem;
+    font-weight: lighter;
   }
   .start-text-box2 {
     font-size: 30px;

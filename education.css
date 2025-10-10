@@ -36,7 +36,7 @@
 .school p {
   margin: 5px 0 0 0;
   font-family: Arial, Helvetica, sans-serif;
-  color: #333232;
+  color: var(--color-muted);
   font-weight: normal;
 }
 

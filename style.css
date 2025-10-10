@@ -1,37 +1,44 @@
 body.light {
+  --color-background: rgba(250, 235, 215, 1);
   --color-text: black;
-  --color-background: #db93bc;
-  background: conic-gradient(#db93bc, rgba(250, 235, 215, 1), #db93bc);
-  /* background: radial-gradient(
-    circle,
-    rgba(219, 147, 188, 1) 44%,
-    rgba(250, 235, 215, 1) 87%
-  ); */
-}
-
-@property --angle {
-  syntax: "<angle>";
-  initial-value: 0deg;
-  inherits: true;
+  --gradient-color-1: rgb(233, 139, 192);
+  --gradient-color-2: rgb(233, 139, 192);
+  --gradient-color-3: #b0cf97;
+  --primary-color: rgb(223, 135, 196);
+  --color-muted: black;
+  --color-blur: rgba(219, 29, 175, 0.048);
 }
 
 body.dark {
-  --color-background: white;
-  --color-text: white;
-  background: conic-gradient(#93b6db, white, #93b6db);
-  /*background: radial-gradient(
-    circle,
-    rgba(147, 182, 219, 1) 0%,
-    rgba(61, 58, 102, 1) 60%
-  );
-}
-/* change animation background */
+  --color-background: #2f2d2e;
+  --color-text: rgb(228, 212, 212);
+  --gradient-color-1: #0d324d;
+  --gradient-color-2: #0d324d;
+  --gradient-color-3: #792359;
+  --primary-color: #d34ea2;
+  --color-muted: rgb(155, 150, 150);
+  --color-blur: rgba(185, 190, 193, 0.08);
 }
 
 body {
   margin: 0;
-  transition: background-color 1s ease;
+  transition: background-color 1s ease, color 1s ease;
   padding-top: 80px;
+  background: radial-gradient(
+      circle at -10% 0%,
+      var(--gradient-color-1),
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 130% 50%,
+      var(--gradient-color-2),
+      transparent 60%
+    ),
+    radial-gradient(
+      circle at -100% 100%,
+      var(--gradient-color-3),
+      transparent 100%
+    );
   background-color: var(--color-background);
   color: var(--color-text);
 }

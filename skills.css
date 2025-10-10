@@ -5,24 +5,33 @@
 }
 
 .skill-list {
-  justify-content: center;
-  flex-direction: row;
   display: flex;
   list-style: none;
   align-items: center;
   padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
 
 .icon-skill {
-  list-style: none;
-  flex-direction: row;
-  display: flex;
-  justify-content: space-between;
   font-size: 80px;
-  color: rgb(186, 41, 183);
+  color: var(--primary-color);
   transition: transform 0.3s ease;
+  backdrop-filter: blur(1000px);
+  border-radius: 6px;
+  padding: 2px;
+  background-color: var(--color-blur);
 }
 
 .icon-skill:hover {
   transform: scale(1.2);
+}
+
+@media (width >= 700px) {
+  .icon-skill {
+    font-size: 120px;
+  }
 }
