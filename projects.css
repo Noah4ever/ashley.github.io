@@ -1,0 +1,5 @@
+.project-section p {
+  text-align: center;
+  color: var(--color-muted);
+  font-family: Arial, Helvetica, sans-serif;
+}

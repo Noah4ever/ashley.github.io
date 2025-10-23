@@ -11,21 +11,27 @@ button.addEventListener("click", () => {
   setTimeout(() => body.classList.remove("animate-gradient"), 1500);
 });
 
-const schools = document.querySelectorAll(".school");
+const schools = document.querySelectorAll(".card");
 
 const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         entry.target.classList.add("show"); // sichtbar machen
-      } else {
-        entry.target.classList.remove("show"); // ausblenden beim Hochscrollen
       }
     });
   },
-  { threshold: 0.2 }
+  {
+    threshold: 0.6,
+  }
 );
 
 schools.forEach((school) => {
   observer.observe(school);
+});
+
+const icons = document.querySelectorAll(".icon-skill");
+
+icons.forEach((icon) => {
+  observer.observe(icon);
 });

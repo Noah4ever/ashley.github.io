@@ -1,55 +1,128 @@
 .timeline {
-  position: relative;
-  max-width: 600px;
-  margin: 0 auto;
-  padding-left: 40px;
-  border-left: 4px solid rgb(0, 0, 0);
+  margin: 20px auto;
+  padding: 20px;
+  justify-content: center;
+  display: flex;
 }
 
-.school::before {
+.card {
+  position: relative;
+  max-width: 400px;
+}
+
+.card:nth-child(odd) {
+  padding: 30px 0 30px 30px;
+}
+.card:nth-child(even) {
+  padding: 30px 30px 30px 0;
+}
+
+.card::before {
   content: "";
   position: absolute;
-  left: -9px;
-  background-color: black;
-  border-radius: 50%;
-  width: 15px;
-  height: 15px;
-  top: 0;
+  width: 50%;
+  border: solid var(--primary-color);
 }
 
-.school {
+.card:nth-child(odd)::before {
+  left: 0px;
+  top: -5px;
+  bottom: -4.5px;
+  border-width: 5px 0 5px 5px;
+  border-radius: 50px 0 0 50px;
+}
+
+.card:nth-child(even)::before {
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-width: 5px 5px 5px 0;
+  border-radius: 0 50px 50px 0;
+}
+
+.card:first-child::before {
+  border-top: 0;
+  border-top-left-radius: 0;
+}
+
+.card:last-child:nth-child(odd)::before {
+  border-bottom: 0;
+  border-bottom-left-radius: 0;
+}
+
+.card:last-child:nth-child(even)::before {
+  border-bottom: 0;
+  border-bottom-right-radius: 0;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  background: var(--color-blur);
+  color: var(--color-text);
+  border-radius: 10px;
+  padding: 10px;
+  font-family: "Funnel Display", sans-serif;
+}
+
+.title {
+  color: var(--secondary-color);
   position: relative;
-  margin: 30px 0;
-  margin: 30px 0;
-  padding-left: 25px;
+  font-family: "Bagel Fat One";
+  margin-bottom: 2px;
+}
+
+.title::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 999px;
+  border: 3px solid var(--primary-color);
+}
+
+.card:nth-child(even) > .info > .title {
+  text-align: right;
+}
+
+.card:nth-child(odd) > .info > .title::before {
+  left: -45px;
+}
+
+.card:nth-child(even) > .info > .title::before {
+  right: -45px;
+}
+
+.card {
   opacity: 0;
   transform: translateY(40px);
   transition: all 0.6s ease-out;
 }
 
-.school h3 {
-  margin: 0;
-  font-size: 1.2rem;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.school p {
+.outer p {
   margin: 5px 0 0 0;
-  font-family: Arial, Helvetica, sans-serif;
   color: var(--color-muted);
   font-weight: normal;
 }
 
-.school.show {
+.card.show {
   opacity: 1;
   transform: translateY(0);
 }
 
 @media (width >= 700px) {
-  .school h3 {
+  .outer h3 {
     font-size: 30px;
   }
-  .school p {
+  .outer p {
     font-size: 25px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .card:nth-child(odd)::before {
+    top: -5px;
+    bottom: -5px;
   }
 }
