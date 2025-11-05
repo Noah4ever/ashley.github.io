@@ -44,6 +44,34 @@ header {
   height: 60%;
 }
 
+.handToggle {
+  cursor: pointer;
+  display: inline-block;
+}
+
+.handToggle.animate {
+  animation: wave 1s ease-in-out;
+  transform: scale(1.2);
+}
+
+@keyframes wave {
+  0% {
+    transform: scale(1.2) rotate(0deg);
+  }
+  25% {
+    transform: scale(1.2) rotate(20deg);
+  }
+  50% {
+    transform: scale(1.2) rotate(-20deg);
+  }
+  75% {
+    transform: scale(1.2) rotate(20deg);
+  }
+  100% {
+    transform: scale(1.2) rotate(0deg);
+  }
+}
+
 .image-border {
   position: absolute;
   top: 25px;

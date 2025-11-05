@@ -35,3 +35,10 @@ const icons = document.querySelectorAll(".icon-skill");
 icons.forEach((icon) => {
   observer.observe(icon);
 });
+
+document
+  .querySelector(".handToggle")
+  .addEventListener("mouseenter", function () {
+    this.classList.add("animate");
+    setTimeout(() => this.classList.remove("animate"), 1500);
+  });
