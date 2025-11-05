@@ -17,7 +17,7 @@ const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        entry.target.classList.add("show"); // sichtbar machen
+        entry.target.classList.add("show");
       }
     });
   },
@@ -42,3 +42,15 @@ document
     this.classList.add("animate");
     setTimeout(() => this.classList.remove("animate"), 1500);
   });
+
+const locationEl = document.querySelector(".location");
+
+locationEl.addEventListener("mouseenter", function () {
+  this.classList.remove("shrink");
+  this.classList.add("grow");
+});
+
+locationEl.addEventListener("mouseleave", function () {
+  this.classList.remove("grow");
+  this.classList.add("shrink");
+});

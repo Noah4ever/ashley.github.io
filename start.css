@@ -133,6 +133,71 @@ header {
   font-family: "Bagel Fat One";
   font-size: 30px;
   color: var(--color-text);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+}
+
+.start-text-box1 h1 {
+  align-items: center;
+  gap: 0.5rem;
+  margin: auto;
+  display: flex;
+}
+
+.textContent {
+  width: 100%;
+  max-width: 400px;
+}
+
+.location {
+  color: var(--color-muted);
+  font-family: "Funnel Display", sans-serif;
+  font-size: medium;
+  width: 100%;
+  max-width: 400px;
+  text-align: left;
+  margin-top: 0.5rem;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+}
+
+.location::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  width: 0%;
+  background-color: currentColor;
+}
+
+.location.grow::after {
+  animation: underline-grow 1s ease-in-out forwards;
+}
+
+.location.shrink::after {
+  animation: underline-shrink 1s ease-in-out forwards;
+}
+
+@keyframes underline-grow {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 55%;
+  }
+}
+
+@keyframes underline-shrink {
+  from {
+    width: 55%;
+  }
+  to {
+    width: 0%;
+  }
 }
 
 .start-text-box2 {
@@ -192,5 +257,8 @@ header {
   }
   .image-box {
     height: 20%;
+  }
+  .location {
+    font-size: 22px;
   }
 }
