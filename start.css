@@ -226,7 +226,7 @@ header {
   padding-top: 3rem;
 }
 
-@media (width >= 950px) {
+@media (width > 1000px) {
   .start-page-container {
     flex-direction: row-reverse;
     width: 70%;
@@ -262,3 +262,40 @@ header {
     font-size: 22px;
   }
 }
+
+/* @media (width >= 700px) {
+  .start-page-container {
+    flex-direction: row-reverse;
+    width: 70%;
+    padding-top: 0rem;
+    margin: auto;
+  }
+  .start-text-box1 {
+    font-size: 2rem;
+    font-weight: lighter;
+  }
+  .start-text-box2 {
+    font-size: 20px;
+  }
+  .image-container {
+    height: 70%;
+  }
+  .name-header {
+    font-size: 40px;
+  }
+  #toggleMode {
+    font-size: 50px;
+  }
+  .icon {
+    font-size: 50px;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+  .image-box {
+    height: 20%;
+  }
+  .location {
+    font-size: 15px;
+  }
+} */
